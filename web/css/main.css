@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Verdana;
+	font-size: 15px;
+	color: #1f1f1f;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #1f1f1f;
+}
+
+input {
+	font-family: Verdana;
+	font-size: 15px;
+	outline: none;
+	border: 2px solid #1f1f1f;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px 15px;
+	display: inline-block;
+}
+
+input[type=radio] {
+	padding: 5px;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	outline: none;
+	appearance: none;
+}
+
+input[type=radio]:checked {
+	background-color: #333399;
+	border-color: #333399;
+}
+
+input[type=radio]:checked+label {
+	color: #333399;
+}
+
+input[type=radio]:hover {
+	background-color: #333399;
+	border-color: #333399;
+}
+
+input[type=text]:hover {
+	border-color: #333399;
+}
+
+select {
+	font-family: Verdana;
+	font-size: 15px;
+	outline: none;
+	border: 2px solid #1f1f1f;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px 15px;
+	display: inline-block;
+}
+
+select:hover {
+	border-color: #333399;
+}
+
+button {
+	font-family: Verdana;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #333399;
+	border: 2px solid #333399;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ffffff;
+	border-color: #333399;
+	color: #333399;
+}
+
+button:disabled {
+	background-color: #7f7f7f;
+	border-color: #7f7f7f;
+}
+
+button:disabled:hover {
+	background-color: #ffffff;
+	border-color: #7f7f7f;
+	color: #7f7f7f;
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-top: 2px solid #bfbfbf;
+	border-left: 2px solid #bfbfbf;
+	width: 100%;
+}
+
+table th,
+td {
+	vertical-align: top;
+	text-align: left;
+	text-overflow: ellipsis;
+	border-bottom: 2px solid #bfbfbf;
+	border-right: 2px solid #bfbfbf;
+	padding: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+table th {
+	background-color: #dfdfdf;
+}
+
+table td input[type=text] {
+	width: calc(100% - 45px)
+}
+
+div.header {
+	background-color: #ffffff;
+	border-bottom: 2px solid #1f1f1f;
+	height: 80px;
+	width: 100vw;
+	display: flex;
+}
+
+div.logo {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+div.opt {
+	height: 80px;
+	display: flex;
+	position: absolute;
+	right: 0;
+}
+
+div.opt div a {
+	text-align: center;
+	text-overflow: ellipsis;
+	line-height: 80px;
+	border-left: 2px solid #1f1f1f;
+	padding: 0 20px;
+	max-width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+}
+
+div.opt div a:hover {
+	background-color: #333399;
+	color: #ffffff;
+}
+
+div.body {
+	min-height: calc(100vh - 82px);
+	display: flex;
+	overflow: auto;
+}
+
+div.login-container {
+	border: 2px solid #1f1f1f;
+	border-radius: 20px;
+	margin: 100px auto 0;
+	height: 340px;
+	width: 600px;
+}
+
+div.login-title {
+	text-align: center;
+	margin: 10px 0;
+}
+
+span.login-title {
+	font-size: 24px;
+}
+
+div.login-message {
+	text-align: center;
+	margin: 10px 0;
+	height: 20px;
+}
+
+span.login-message {
+	color: red;
+}
+
+div.login-field {
+	margin: 10px auto;
+	padding: 10px;
+	height: 140px;
+	width: 200px;
+}
+
+label.login-field {
+	width: 100px;
+}
+
+div.login-field-radio {
+	margin: 10px 0;
+	padding-left: 100px;
+}
+
+label.login-field-radio {
+	cursor: pointer;
+	position: relative;
+	bottom: 8px;
+}
+
+label.login-field-radio:hover {
+	color: #333399;
+}
+
+div.login-button {
+	text-align: center;
+	margin: 10px;
+}
+
+div.login-footer {
+	text-align: center;
+	line-height: 30px;
+	margin: 10px;
+	height: 30px;
+}
+
+div.left-sidebar {
+	border-right: 2px solid #1f1f1f;
+	width: 250px;
+}
+
+div.left-sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.left-sidebar ul li a {
+	background-color: #ffffff;
+	border-bottom: 1px solid #1f1f1f;
+	padding: 20px;
+	display: block;
+}
+
+div.left-sidebar ul li a:hover {
+	background-color: #333399;
+	color: #ffffff;
+}
+
+div.left-sidebar ul li a.selected {
+	background-color: #333399;
+	color: #ffffff;
+}
+
+div.content {
+	padding: 50px;
+	width: calc(100vw - 350px);
+}
+
+div.welcome-text {
+	font-size: 18px;
+	margin: 0 20px;
+}
+
+span.welcome-name {
+	font-weight: bold;
+}
+
+div.dashboard {
+	margin: 50px 20px 0;
+}
+
+div.stats {
+	margin: 10px 0;
+}
+
+span.stats-data {
+	font-size: 40px;
+	font-weight: bold;
+	color: #333399;
+}
+
+div.profile {
+	border: 2px solid #1f1f1f;
+	border-radius: 20px;
+	margin: 0 auto;
+	padding: 20px;
+	height: calc(100% - 40px);
+	width: 700px;
+}
+
+div.profile-title {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+}
+
+div.form-message {
+	text-align: center;
+	margin: 10px 0;
+	height: 20px;
+}
+
+span.form-message {
+	color: red;
+}
+
+div.profile-form {
+	margin: 20px 0;
+	height: calc(100% - 120px);
+}
+
+div.profile-form label {
+	text-align: right;
+	margin: 10px;
+	width: 200px;
+	display: inline-block;
+}
+
+div.profile-form input {
+	width: 410px;
+}
+
+div.profile-form select {
+	width: 150px;
+}
+
+div.vaccination-form {
+	border: 2px solid #1f1f1f;
+	border-radius: 20px;
+	padding: 20px;
+	width: calc(100% - 40px);
+}
+
+div.vaccination-form label {
+	text-align: right;
+	margin: 10px;
+	width: 220px;
+	display: inline-block;
+}
+
+div.vaccination-form input {
+	width: 400px;
+}
+
+div.table-message {
+	text-align: left;
+	margin: 20px 20px;
+	height: 20px;
+}
+
+span.table-message {
+	color: red;
+}
+
+span.title {
+	font-family: Arial;
+}
+
+span.detail {
+	font-family: Arial;
+	font-size: 14px;
+	color: #6f6f6f;
+}
+
+div.qr-container {
+	border: 2px solid #1f1f1f;
+	border-radius: 20px;
+	margin: 50px auto 0;
+	height: fit-content;
+	width: 600px;
+}
+
+div.qr-title {
+	text-align: center;
+	margin: 10px 0;
+}
+
+span.qr-title {
+	font-size: 16px;
+}
+
+div.qr-message {
+	text-align: center;
+	margin: 10px 0;
+	height: 20px;
+}
+
+span.qr-message {
+	color: red;
+}
+
+div.qr-scan-box {
+	text-align: center;
+	border: 2px solid #1f1f1f;
+	margin: 20px auto;
+	min-height: 250px;
+	width: 400px;
+}
+
+div.qr-bgcover {
+	background-color: #7f7f7f7f;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+div.qr-popup {
+	background-color: #ffffff;
+	border: 2px solid #1f1f1f;
+	border-radius: 20px;
+	margin: 100px auto;
+	height: fit-content;
+	width: 450px;
+}
+
+div.qr-popup-menu {
+	text-align: right;
+	margin: 10px 20px;
+}
+
+div.qr-footer {
+	text-align: center;
+	line-height: 30px;
+	margin: 10px;
+	height: 80px;
+}
+
+div.qr-footer input {
+	width: 400px;
+}

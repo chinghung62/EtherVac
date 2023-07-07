@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.chinghung62.ethervac</groupId>
+  <artifactId>EtherVac</artifactId>
+  <version>1.0.0</version>
+  <packaging>war</packaging>
+  <name>EtherVac Vaccination E-Certification System</name>
+  <description>EtherVac is a vaccination e-certification system using Ethereum technology, developed using Java &amp; JSP, utilizing Solidity smart contract to store vaccination certificates.</description>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>20</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+        <configuration>
+          <warSourceDirectory>web</warSourceDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.web3j</groupId>
+  		<artifactId>core</artifactId>
+  		<version>5.0.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.pdfbox</groupId>
+  		<artifactId>pdfbox</artifactId>
+  		<version>2.0.26</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.google.zxing</groupId>
+  		<artifactId>core</artifactId>
+  		<version>3.5.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.google.zxing</groupId>
+  		<artifactId>javase</artifactId>
+  		<version>3.5.1</version>
+  	</dependency>
+  </dependencies>
+</project>
