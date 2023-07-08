@@ -13,7 +13,7 @@ To quckly deploy EtherVac, it is required to follow the guidelines in order.
 ## Smart Contract Deployment
 1. Download the [latest EtherVac release](https://github.com/chinghung62/EtherVac/releases/latest) then extract the ZIP file.
 3. Upload all smart contracts (`.sol` file) to [Remix Ethereum IDE](https://remix.ethereum.org/). Compile `EtherVac.sol` using compiler with version 0.8.0 and above.
-<br>
+    <br>
     **Note:**
     > If an error `CompilerError: Stack too deep.` occurs, go to **Advanced Configurations** then select **Use configuration file**. Open the `compiler_config.json`, add `"viaIR": true` in the `settings` object, and compile the contract again.
 4. Use crypto account to deploy the smart contract.
