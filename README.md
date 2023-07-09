@@ -28,7 +28,7 @@ Configure `ethereum_config.ini` by entering values for the keys below:
 - `node_api_url` - The URL of the Web3 API endpoint.
 - `private_key` - The private key of the crypto wallet account.
 - `gas_price` - Gas price in unit 'wei'. 1000000000 wei is equivalent to 1 Gwei.
-- `gas_limit` - To define the maximum transaction fee by formula *max_transaction_fee = gas_price * $gas_limit*
+- `gas_limit` - To define the maximum transaction fee by formula *max_transaction_fee = gas_price * gas_limit*
 - `contract_address` - The address of smart contract deployed using `private_key`.
 
 ## Startup Configuration
