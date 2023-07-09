@@ -12,7 +12,7 @@ To quckly deploy EtherVac, it is required to follow the guidelines in order.
 
 ## Smart Contract Deployment
 1. Download the [latest EtherVac release](https://github.com/chinghung62/EtherVac/releases/latest) then extract the ZIP file.
-3. Upload all smart contracts (`.sol` file) to [Remix Ethereum IDE](https://remix.ethereum.org/). Compile `EtherVac.sol` using compiler with version 0.8.0 and above.
+3. Upload all [smart contracts](Smart%20Contracts) (`.sol` file) to [Remix Ethereum IDE](https://remix.ethereum.org/). Compile `EtherVac.sol` using compiler with version 0.8.0 and above.
     <br>
     **Note:**
     > If an error `CompilerError: Stack too deep.` occurs, go to **Advanced Configurations** then select **Use configuration file**. Open the `compiler_config.json`, add `"viaIR": true` in the `settings` object, and compile the contract again.
@@ -101,3 +101,5 @@ Download the [source code](https://github.com/chinghung62/EtherVac/archive/refs/
     <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     ```
     The `server.xml` file is located at **Server -> Tomcat v9.0 Server at localhost-config** in the **Explorer** tab. 
+10. Copy [`ethereum_config.ini`](ethereum_config.ini) to the Eclipse IDE working directory. Usually this directory is located at `%HOMEDRIVE%%HOMEPATH%\eclipse\java-<yyyy>-<mm>\eclipse`.
+11. Create a folder named `storage` at the Eclipse IDE working directory, then create two sub-folders: `certificates` and `qr` within it. Next, copy [`cert-template.pdf`](Certificate%20Templates/cert-template.pdf) to the `certificates` folder.
