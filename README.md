@@ -39,7 +39,7 @@ Edit `run.bat` and configure below variables **ONLY**:
 ## Run!
 Start EtherVac by executing `run.bat`.
 
-# Development Setup
+# Development Setup (Windows 10 and above)
 The system is developed using Java language, and runs on Java SE Development Kit (JDK) and Apache Tomcat 9 runtime environment. The system is built in the Eclipse IDE using a dynamic web project with Maven nature.
 
 ## Technical Requirements
