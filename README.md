@@ -33,8 +33,8 @@ Configure `ethereum_config.ini` by entering values for the keys below:
 
 ## Startup Configuration
 Edit `run.bat` and configure below variables **ONLY**:
-- `HTTPS_PROXY_HOST` - IP address of the proxy server. Could also be the loopback address `127.0.0.1`.
-- `HTTPS_PROXY_PORT` - Port number of the proxy server.
+- `HTTPS_PROXY_HOST` - *Optional.* IP address of the proxy server. Could also be the loopback address `127.0.0.1`.
+- `HTTPS_PROXY_PORT` - *Optional.* Port number of the proxy server.
 
 ## Run!
 Start EtherVac by executing `run.bat`.
