@@ -1,4 +1,4 @@
-# EtherVac: A Vaccination E-Certification using Ethereum
+# EtherVac: A Vaccination E-Certification System using Ethereum
 
 EtherVac is an innovative vaccination e-certification system that harnesses the power of Ethereum blockchain to provide a secure, tamper-proof, and convenient solution for managing vaccination certificates. EtherVac is a web-based system that is developed using Java and Java Servlet Pages (JSP), utilizing Solidity smart contract to securely store vaccination certificates. EtherVac takes user authentication to the next level by implementing a password-less login, where users can easily access the system using their MetaMask wallet. With EtherVac, clinic can sign and issue vaccination certificates to the patients. While patients can download certificates in PDF file and then verify it by scanning the QR code contained within the certificate. All certificates will be stored in the smart contract deployed into Ethereum Sepolia test network.
 
